@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/2a0d9d4220.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+   <div class="wrapper">
+    <div class="sidenav">
+      
+        <div class="navigation">
+         <ul>
+           <li>
+             <a href="#">
+               <span class="icon"><i class="fas fa-arrow-right"></i></span>
+               <!-- <span class="title">Home</span> -->
+             </a>
+           </li>
+          
+           <li>
+             <a href="#">
+               <span class="icon"><i class="fa-solid fa-user"></i></span>
+               <!-- <span class="title">Profile</span> -->
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <span class="icon"><i class="fa-solid fa-message"></i></span>
+               <!-- <span class="title">Messages</span> -->
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+               <!-- <span class="title">Help</span> -->
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <span class="icon"><i class="fa-solid fa-message"></i></span>
+               <!-- <span class="title">Messages</span> -->
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+               <!-- <span class="title">Help</span> -->
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <span class="icon"><i class="fa-solid fa-message"></i></span>
+               <!-- <span class="title">Messages</span> -->
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+               <!-- <span class="title">Help</span> -->
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <span class="icon"><i class="fa-solid fa-message"></i></span>
+               <!-- <span class="title">Messages</span> -->
+             </a>
+           </li>
+           <li>
+             <a href="#">
+               <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+               <!-- <span class="title">Help</span> -->
+             </a>
+           </li>
+           <li class="mt-4">
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-message"></i></span>
+              <!-- <span class="title">Messages</span> -->
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+              <!-- <span class="title">Help</span> -->
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-message"></i></span>
+              <!-- <span class="title">Messages</span> -->
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+              <!-- <span class="title">Help</span> -->
+            </a>
+          </li>
+           
+     </ul>
+       </div>
+       
+    </div>
+
+
+    <main>
+       <header class="header fixed-top">
+        <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light ">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <img class="h-100" src="data:image/png;base64,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" alt="">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <ul id="myUL">
+                    <li><a href=""></a><i class="fas fa-lightbulb"></i> skillsets </li>
+                    <li><a href=""></a><i class="fas fa-suitcase"></i>career servcies </li>
+                    <li><a href=""></a><i class="fas fa-envelope"></i>my communications </li>
+                    <li><a href=""></a><i class="fas fa-bell"></i> </li>
+                    <li><a href=""></a><i class="fas fa-user-alt"></i>my profile </li>
+                    <li><a href=""></a><i class="fas fa-sign-out-alt"></i>logout </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="bg-danger text-light p-0">
+            <p>Student zone >> dashboard</h1>
+        </div>
+        <div class="image mt-5">
+            <img src="banner1.png" class="w-100" alt="">
+           
+                
+              
+        </div>
+       </header>
+        <section>
+            
+    
+            <div class="row m-5 p-5">
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        
+                        <div class="card-body">
+                          <p class="card-text">operations management</p>
+                          <p class="card-text">session 8</p>
+    
+                          <p class="card-text text-danger">weekday batch</p>
+                          <p>prof ligar shah</p>
+                        
+                        </div>
+                      </div>
+                   </div>
+                   <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                       
+                        <div class="card-body">
+                            <p class="card-text">operations management</p>
+                            <p class="card-text">session 8</p>
+      
+                            <p class="card-text text-danger">weekday batch</p>
+                            <p>prof ligar shah</p>
+                        </div>
+                      </div>
+                   </div>
+                   <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        
+                        <div class="card-body">
+                            <p class="card-text">operations management</p>
+                            <p class="card-text">session 8</p>
+      
+                            <p class="card-text text-danger">weekday batch</p>
+                            <p>prof ligar shah</p>
+                        </div>
+                      </div>
+                   </div>
+                   <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        
+                        <div class="card-body">
+                            <p class="card-text">operations management</p>
+                            <p class="card-text">session 8</p>
+      
+                            <p class="card-text text-danger">weekday batch</p>
+                            <p>prof ligar shah</p>
+                        </div>
+                      </div>
+                   </div>
+                
+            </div>
+    
+         
+            
+            <div class="row m-5 p-5">
+                
+                   <div class="col-lg-3 col-md-12 c">
+                    
+                    <div class="card" style="width: 18rem;">
+                        
+                        <img src="powerpoint.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Decison science</p>
+                          <p class="card-text">prof rooshabh mehta</p>
+                          <p class="card-text">decison science session 10</p>
+                          <p class="card-text">wednesday 05 april</p>
+                          <p class="card-text text-danger">weekday batch</p>
+                        
+                        </div>
+                      </div>
+                   </div>
+                   <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="powerpoint.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Decison science</p>
+                          <p class="card-text">prof rooshabh mehta</p>
+                          <p class="card-text">decison science session 10</p>
+                          <p class="card-text">wednesday 05 april</p>
+                          <p class="card-text text-danger">weekday batch</p>
+                        </div>
+                      </div>
+                   </div>
+                   <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="powerpoint.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Decison science</p>
+                            <p class="card-text">prof rooshabh mehta</p>
+                            <p class="card-text">decison science session 10</p>
+                            <p class="card-text">wednesday 05 april</p>
+                            <p class="card-text text-danger">weekday batch</p>
+                        </div>
+                      </div>
+                   </div>
+                   <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="powerpoint.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Decison science</p>
+                            <p class="card-text">prof rooshabh mehta</p>
+                            <p class="card-text">decison science session 10</p>
+                            <p class="card-text">wednesday 05 april</p>
+                            <p class="card-text text-danger">weekday batch</p>
+                        
+                        </div>
+                      </div>
+                   </div>
+            </div>
+    
+            <!-- courses and assignments -->
+    
+            <div class="row m-5 p-5">
+                
+               <div class=" col-lg-6 text-left">
+                <div class="card" >
+                
+                    <h5>ONGOING COURSES</h5>
+                    <p>Decision science</p>
+                    <p>Busimess law</p>
+                    <p>Strategic management</p>
+                    <p>essentials of HRM</p>
+                    <p>business communications</p>
+                </div>
+                
+                    
+               </div>
+               <div class=" col-lg-6 ">
+                <div class="card" >
+                    <h4>ASSIGNMENTS</h4>
+                    <div class="row">
+                        <div class="col-6">
+                             <p>Business communication sem 2</p>
+                             <p class="text-danger">not submitted</p>
+                        </div>
+                        <div class="col-6">
+                            <span class="badge badge-danger">Pending</span>
+                            <p>due date 29may 2023</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                             <p>Business communication sem 2</p>
+                             <p class="text-danger">not submitted</p>
+                        </div>
+                        <div class="col-6">
+                            <span class="badge badge-danger">Pending</span>
+                            <p>due date 29may 2023</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                             <p>Business communication sem 2</p>
+                             <p class="text-danger">not submitted</p>
+                        </div>
+                        <div class="col-6">
+                            <span class="badge badge-danger">Pending</span>
+                            <p>due date 29may 2023</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                             <p>Business communication sem 2</p>
+                             <p class="text-danger">not submitted</p>
+                        </div>
+                        <div class="col-6">
+                            <span class="badge badge-danger">Pending</span>
+                            <p>due date 29may 2023</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                             <p>Business communication sem 2</p>
+                             <p class="text-danger">not submitted</p>
+                        </div>
+                        <div class="col-6">
+                            <span class="badge badge-danger">Pending</span>
+                            <p>due date 29may 2023</p>
+                        </div>
+                    </div>
+                </div>
+                
+                    
+               </div>
+               
+            </div>
+    
+    
+            <!-- results and ranks -->
+    
+            <div class="row m-4">
+               <div class="col-lg-6">
+                <h3>RESULTS</h3>
+                <table class="table table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">sr id</th>
+                        <th scope="col">subject</th>
+                        <th scope="col">TEE</th>
+                        <th scope="col">Assignment</th>
+                        <th scope="col">total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Business economics</td>
+                        <td>57</td>
+                        <td>23</td>
+                        <td>80</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Business economics</td>
+                        <td>57</td>
+                        <td>23</td>
+                        <td>80</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Business economics</td>
+                        <td>57</td>
+                        <td>23</td>
+                        <td>80</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Business economics</td>
+                        <td>57</td>
+                        <td>23</td>
+                        <td>80</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Business economics</td>
+                        <td>57</td>
+                        <td>23</td>
+                        <td>80</td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+               </div>
+               <div class="col-lg-6">
+                   <h3>RANKS</h3>
+                   <div class="card bg-info">
+                    <div class="card-header">
+                        <h6 class="text-center">sem 1:cycle June 2022</h6>
+                    </div>
+                    <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer><a href="" class="text-center">click here to see rank</a></footer>
+                      </blockquote>
+                    </div>
+                  </div>
+               </div>
+            </div>
+    
+            <!-- service requiests -->
+    
+            <div class="row m-4">
+                <div class="col-lg-6">
+                    <h3>service requests</h3>
+                    <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col">sr no</th>
+                            <th scope="col">sr type</th>
+                            <th scope="col">sr id</th>
+                            <th scope="col">status</th>
+                            <th scope="col">created date</th>
+                            <th scope="col">closed date</th>
+                            <th scope="col">expected closed date</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>change in contact details</td>
+                            <td>12718763</td>
+                            <td>closed</td>
+                            <td>2023-11-4</td>
+                            <td></td>
+                            <td>2023-11-6</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>change in contact details</td>
+                            <td>12718763</td>
+                            <td>closed</td>
+                            <td>2023-11-4</td>
+                            <td></td>
+                            <td>2023-11-6</td>
+                            
+                          </tr>
+                   
+                        </tbody>
+                      </table>
+                   </div>
+            </div>
+    
+    
+            <!-- footer
+             -->
+    
+             <div class="footer">
+                  <div class="row m-5 p-5">
+                      <div class="col-3">
+                          <h4 >quick links</h5>
+                          <div>
+                            <a href="" class="text-light">documents</a>
+                          </div>
+                          <div>
+                            <a href="" class="text-light">demo</a>
+                          </div>
+                            <div>
+                                <a href="" class="text-light">support</a>
+                            </div>
+                            <div>
+                                <a href="" class="text-light">register</a>
+                            </div>
+                            
+                          
+                      </div>
+                      <div class="col-3">
+                        <h4>reach us</h5>
+                        <a href="" class="text-light">1800-556-4546</a>
+                        <a href="" class="text-light">nmims@edu</a>
+                    </div>
+                    <div class="col-3">
+                        <h4>visit us</h5>
+                        <a href="" class="text-light">mukesh patel college of technology</a>
+                            <a href="" class="text-light">andheri mumbai-maharashtra - 400056</a>
+                    </div>
+                    <div class="col-3">
+                        <h4>connect with us</h5>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <div>
+                            <img class="w-50 h-75 mt-3"src="download.jpg" alt="">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="text-center p-5">
+                    <p>@2023 NMIMS All rights reserved</p>
+                  </div>
+             </div>
+            
+        </section>
+    </main>
+   </div>
+   
+    
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    
+</body>
+</html>
